@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/student" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:id="@+id/l1"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/l2"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l1">
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Student Number:"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="45dp"
+            android:id="@+id/e1"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/l3"
+
+        android:orientation="horizontal"
+        android:layout_below="@+id/l2">
+
+        <TextView
+            android:layout_width="166dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Student Name:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/e2"
+            android:layout_width="190dp"
+            android:layout_height="45dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/l4"
+        android:layout_below="@+id/l3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:text="Year and Section:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/e3"
+            android:layout_width="190dp"
+            android:layout_height="45dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/l4"
+        android:id="@+id/l5"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="170dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="15dp"
+            android:text="Create"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            app:backgroundTint="#014141"
+            app:cornerRadius="25dp"/>
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="170dp"
+            android:layout_height="65dp"
+            android:text="Delete"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            app:backgroundTint="#014141"
+            app:cornerRadius="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:id="@+id/l6"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/l5">
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="170dp"
+            android:layout_height="65dp"
+            android:layout_marginRight="15dp"
+            android:text="Update"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            app:backgroundTint="#014141"
+            app:cornerRadius="25dp"/>
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="170dp"
+            android:layout_height="65dp"
+            android:text="Search"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            app:backgroundTint="#014141"
+            app:cornerRadius="25dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/l6"
+        android:id="@+id/l7"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="355dp"
+            android:layout_height="65dp"
+            android:text="View Data"
+            android:textColor="#fff"
+            android:textSize="17sp"
+            app:backgroundTint="#014141"
+            app:cornerRadius="25dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
